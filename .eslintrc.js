@@ -15,7 +15,7 @@
     sourceType: 'module',
   },
   plugins: [
-    'react',
+    'react', 'import-newlines'
   ],
   rules: {
     "react/no-unescaped-entities": "off",
@@ -35,8 +35,8 @@
     'no-multiple-empty-lines': [
       'error',
       {
-        max: 1,
-        maxEOF: 1,
+        max: 10,
+        maxEOF: 10,
       },
     ],
     'no-underscore-dangle': [
@@ -62,6 +62,10 @@
     'jsx-a11y/no-autofocus': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     'react/no-array-index-key': 0,
+    "import-newlines/enforce": [
+      "error",
+      6
+    ],
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
